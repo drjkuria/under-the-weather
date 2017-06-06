@@ -35,6 +35,7 @@
 		10952B8E1EE6E3CC008DBF9B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B8D1EE6E3CC008DBF9B /* Location.swift */; };
 		10952B911EE6E46A008DBF9B /* Double+RoundToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B901EE6E46A008DBF9B /* Double+RoundToInt.swift */; };
 		10952B931EE6E4CE008DBF9B /* Double+StringTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B921EE6E4CE008DBF9B /* Double+StringTime.swift */; };
+		1D9781DE7DF52D6778ACF35C /* Pods_UnderTheWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949F1B496E959E526F915706 /* Pods_UnderTheWeather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,9 @@
 		10952B8D1EE6E3CC008DBF9B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		10952B901EE6E46A008DBF9B /* Double+RoundToInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+RoundToInt.swift"; sourceTree = "<group>"; };
 		10952B921EE6E4CE008DBF9B /* Double+StringTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+StringTime.swift"; sourceTree = "<group>"; };
+		3E42638A63179AF8445ED25E /* Pods-UnderTheWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheWeather/Pods-UnderTheWeather.release.xcconfig"; sourceTree = "<group>"; };
+		784F5E1040D1D348AB5C0695 /* Pods-UnderTheWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheWeather/Pods-UnderTheWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		949F1B496E959E526F915706 /* Pods_UnderTheWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderTheWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9781DE7DF52D6778ACF35C /* Pods_UnderTheWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,8 @@
 			children = (
 				109484C61EE6A54700ACCB46 /* UnderTheWeather */,
 				109484C51EE6A54700ACCB46 /* Products */,
+				F1A6086C8000A6A68B1AA3C1 /* Pods */,
+				59937EDBE2C6CAAAA58AB456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +164,23 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		59937EDBE2C6CAAAA58AB456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				949F1B496E959E526F915706 /* Pods_UnderTheWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1A6086C8000A6A68B1AA3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				784F5E1040D1D348AB5C0695 /* Pods-UnderTheWeather.debug.xcconfig */,
+				3E42638A63179AF8445ED25E /* Pods-UnderTheWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 109484D61EE6A54700ACCB46 /* Build configuration list for PBXNativeTarget "UnderTheWeather" */;
 			buildPhases = (
+				BB5EAEB560B5FD949B7B944D /* [CP] Check Pods Manifest.lock */,
 				109484C01EE6A54700ACCB46 /* Sources */,
 				109484C11EE6A54700ACCB46 /* Frameworks */,
 				109484C21EE6A54700ACCB46 /* Resources */,
+				B272489AD28929F565E576A4 /* [CP] Embed Pods Frameworks */,
+				526CD48416221887EC3813A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +270,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		526CD48416221887EC3813A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderTheWeather/Pods-UnderTheWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B272489AD28929F565E576A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderTheWeather/Pods-UnderTheWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB5EAEB560B5FD949B7B944D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		109484C01EE6A54700ACCB46 /* Sources */ = {
@@ -375,6 +450,7 @@
 		};
 		109484D71EE6A54700ACCB46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784F5E1040D1D348AB5C0695 /* Pods-UnderTheWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YV985BAL4N;
@@ -388,6 +464,7 @@
 		};
 		109484D81EE6A54700ACCB46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E42638A63179AF8445ED25E /* Pods-UnderTheWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YV985BAL4N;
