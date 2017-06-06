@@ -29,6 +29,7 @@
 		109484FB1EE6B91500ACCB46 /* 13n.png in Resources */ = {isa = PBXBuildFile; fileRef = 109484E91EE6B91500ACCB46 /* 13n.png */; };
 		109484FC1EE6B91500ACCB46 /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = 109484EA1EE6B91500ACCB46 /* 50d.png */; };
 		109484FD1EE6B91500ACCB46 /* 50n.png in Resources */ = {isa = PBXBuildFile; fileRef = 109484EB1EE6B91500ACCB46 /* 50n.png */; };
+		109484FF1EE6BA7D00ACCB46 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109484FE1EE6BA7D00ACCB46 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		109484E91EE6B91500ACCB46 /* 13n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 13n.png; path = ../../../../Documents/DVT/WeatherIcons/13n.png; sourceTree = "<group>"; };
 		109484EA1EE6B91500ACCB46 /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 50d.png; path = ../../../../Documents/DVT/WeatherIcons/50d.png; sourceTree = "<group>"; };
 		109484EB1EE6B91500ACCB46 /* 50n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 50n.png; path = ../../../../Documents/DVT/WeatherIcons/50n.png; sourceTree = "<group>"; };
+		109484FE1EE6BA7D00ACCB46 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				109484CE1EE6A54700ACCB46 /* Assets.xcassets */,
 				109484D01EE6A54700ACCB46 /* LaunchScreen.storyboard */,
 				109484D31EE6A54700ACCB46 /* Info.plist */,
+				109484FE1EE6BA7D00ACCB46 /* WeatherViewController.swift */,
 			);
 			path = UnderTheWeather;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				109484C81EE6A54700ACCB46 /* AppDelegate.swift in Sources */,
+				109484FF1EE6BA7D00ACCB46 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
