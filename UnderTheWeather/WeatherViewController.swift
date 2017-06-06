@@ -57,6 +57,11 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     weatherService = WeatherService()
     locationAuthStatus()
   }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    locationAuthStatus()
+  }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -96,7 +101,18 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
   }
   
   func updateCurrentWeather(weatherCondition: WeatherCondition) {
-    print(weatherCondition)
+    self.currentDateLabel.text = "\(weatherCondition.date!)"
+    self.currentWeatherTemperatureLabel.text = "\(weatherCondition.temperature!)°C"
+    self.currentWeatherHighLowLabel.text = "\(weatherCondition.maxTemperature!) / \(weatherCondition.minTemperature!)"
+    self.currentWeatherDescriptionLabel.text = "\(weatherCondition.description!)"
+    let countryName = self.countryName(countryCode: weatherCondition.countryCode!)
+    self.currentLocationLabel.text = "\(weatherCondition.locationName!), \(countryName!)"
+    self.currentWeatherImageView.image = UIImage.init(named: weatherCondition.icon!)
+  }
+  
+  func countryName(countryCode: String) -> String? {
+    let current = Locale(identifier: "en_US")
+    return current.localizedString(forRegionCode: countryCode) ?? nil
   }
   
   // MARK: - CLLocationManagerDelegate
