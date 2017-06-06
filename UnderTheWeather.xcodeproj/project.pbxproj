@@ -33,6 +33,8 @@
 		10952B8A1EE6C2E0008DBF9B /* joburg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10952B891EE6C2E0008DBF9B /* joburg.jpeg */; };
 		10952B8C1EE6E327008DBF9B /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B8B1EE6E327008DBF9B /* WeatherCondition.swift */; };
 		10952B8E1EE6E3CC008DBF9B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B8D1EE6E3CC008DBF9B /* Location.swift */; };
+		10952B911EE6E46A008DBF9B /* Double+RoundToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B901EE6E46A008DBF9B /* Double+RoundToInt.swift */; };
+		10952B931EE6E4CE008DBF9B /* Double+StringTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10952B921EE6E4CE008DBF9B /* Double+StringTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		10952B891EE6C2E0008DBF9B /* joburg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joburg.jpeg; sourceTree = "<group>"; };
 		10952B8B1EE6E327008DBF9B /* WeatherCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCondition.swift; sourceTree = "<group>"; };
 		10952B8D1EE6E3CC008DBF9B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		10952B901EE6E46A008DBF9B /* Double+RoundToInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+RoundToInt.swift"; sourceTree = "<group>"; };
+		10952B921EE6E4CE008DBF9B /* Double+StringTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+StringTime.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		109484C61EE6A54700ACCB46 /* UnderTheWeather */ = {
 			isa = PBXGroup;
 			children = (
+				10952B8F1EE6E447008DBF9B /* Extensions */,
 				109484C71EE6A54700ACCB46 /* AppDelegate.swift */,
 				109484FE1EE6BA7D00ACCB46 /* WeatherViewController.swift */,
 				10952B8B1EE6E327008DBF9B /* WeatherCondition.swift */,
@@ -141,6 +146,15 @@
 				10952B891EE6C2E0008DBF9B /* joburg.jpeg */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10952B8F1EE6E447008DBF9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10952B901EE6E46A008DBF9B /* Double+RoundToInt.swift */,
+				10952B921EE6E4CE008DBF9B /* Double+StringTime.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +251,9 @@
 			files = (
 				109484C81EE6A54700ACCB46 /* AppDelegate.swift in Sources */,
 				10952B8C1EE6E327008DBF9B /* WeatherCondition.swift in Sources */,
+				10952B931EE6E4CE008DBF9B /* Double+StringTime.swift in Sources */,
 				10952B8E1EE6E3CC008DBF9B /* Location.swift in Sources */,
+				10952B911EE6E46A008DBF9B /* Double+RoundToInt.swift in Sources */,
 				109484FF1EE6BA7D00ACCB46 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
