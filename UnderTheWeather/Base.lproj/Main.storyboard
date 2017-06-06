@@ -31,11 +31,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-Os-gXI">
+                                <rect key="frame" x="120" y="69" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Wo0-DE-cUC"/>
+                                    <constraint firstAttribute="height" constant="80" id="iS0-f6-idz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.36645859390000002" green="0.74611796289999999" blue="0.57236119910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Sp-Ew-FLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8b5-dc-d6d"/>
+                            <constraint firstItem="v0W-Os-gXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Auh-M8-Cus"/>
                             <constraint firstAttribute="leadingMargin" secondItem="5Sp-Ew-FLi" secondAttribute="leading" id="BiG-lN-zCu"/>
+                            <constraint firstItem="v0W-Os-gXI" firstAttribute="top" secondItem="5Sp-Ew-FLi" secondAttribute="bottom" constant="6" id="jab-zW-0Iy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Sp-Ew-FLi" secondAttribute="trailing" id="r2x-D9-GRj"/>
                             <constraint firstItem="5Sp-Ew-FLi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zBk-gs-MYc"/>
                         </constraints>
