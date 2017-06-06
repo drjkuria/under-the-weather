@@ -92,11 +92,11 @@
 			children = (
 				109484D91EE6B8FE00ACCB46 /* WeatherIcons */,
 				109484C71EE6A54700ACCB46 /* AppDelegate.swift */,
+				109484FE1EE6BA7D00ACCB46 /* WeatherViewController.swift */,
 				109484CB1EE6A54700ACCB46 /* Main.storyboard */,
 				109484CE1EE6A54700ACCB46 /* Assets.xcassets */,
 				109484D01EE6A54700ACCB46 /* LaunchScreen.storyboard */,
 				109484D31EE6A54700ACCB46 /* Info.plist */,
-				109484FE1EE6BA7D00ACCB46 /* WeatherViewController.swift */,
 			);
 			path = UnderTheWeather;
 			sourceTree = "<group>";
