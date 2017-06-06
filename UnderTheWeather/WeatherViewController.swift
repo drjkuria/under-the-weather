@@ -48,6 +48,13 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     super.viewDidLoad()
     setBlurBackground()
     separatorView.alpha = 0.65
+    
+    locationManager.delegate = self
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    locationManager.requestWhenInUseAuthorization()
+    locationManager.startUpdatingLocation()
+    
+    weatherService = WeatherService()
   }
 
   override func didReceiveMemoryWarning() {
