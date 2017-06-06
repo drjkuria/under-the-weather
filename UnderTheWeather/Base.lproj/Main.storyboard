@@ -267,6 +267,30 @@
                             <constraint firstItem="5Sp-Ew-FLi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zBk-gs-MYc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentDateLabel" destination="5Sp-Ew-FLi" id="TFq-cP-M7e"/>
+                        <outlet property="currentLocationLabel" destination="SkZ-dP-0fh" id="dlh-9C-nzH"/>
+                        <outlet property="currentWeatherDescriptionLabel" destination="z1u-Io-PBk" id="8Tw-bb-dW4"/>
+                        <outlet property="currentWeatherHighLowLabel" destination="4yU-fZ-pSR" id="9uQ-pQ-PIz"/>
+                        <outlet property="currentWeatherImageView" destination="v0W-Os-gXI" id="LFw-C1-G5p"/>
+                        <outlet property="currentWeatherTemperatureLabel" destination="g4t-Aq-UGP" id="SV5-d9-4Os"/>
+                        <outlet property="dayFiveForecastHighLowLabel" destination="XwJ-3F-Uvb" id="9b5-CA-mds"/>
+                        <outlet property="dayFiveForecastNameLabel" destination="j9r-pA-DPU" id="4hN-B9-xra"/>
+                        <outlet property="dayFiveForecastWeatherImageView" destination="Xru-bF-Tlf" id="U54-q0-bs6"/>
+                        <outlet property="dayFourForecastHighLowLabel" destination="qX4-q3-Lth" id="HgC-3p-9JG"/>
+                        <outlet property="dayFourForecastNameLabel" destination="600-Zm-37O" id="P5R-Pe-igY"/>
+                        <outlet property="dayFourForecastWeatherImageView" destination="CZj-XI-zB2" id="AbM-wp-Cru"/>
+                        <outlet property="dayOneForecastHighLowLabel" destination="Rz9-lh-wF5" id="435-yz-gOB"/>
+                        <outlet property="dayOneForecastNameLabel" destination="XuI-CV-N0q" id="lfp-KA-z7x"/>
+                        <outlet property="dayOneForecastWeatherImageView" destination="hlO-N8-ZNz" id="NoT-hw-pd0"/>
+                        <outlet property="dayThreeForecastHighLowLabel" destination="yM2-dD-nNu" id="pcE-Id-Ml0"/>
+                        <outlet property="dayThreeForecastNameLabel" destination="TZz-Hk-bUq" id="uOM-GX-7mi"/>
+                        <outlet property="dayThreeForecastWeatherImageView" destination="NSH-Bd-N1s" id="jqn-Vx-hCV"/>
+                        <outlet property="dayTwoForecastHighLowLabel" destination="ImX-TB-9sW" id="tTl-br-ZPh"/>
+                        <outlet property="dayTwoForecastNameLabel" destination="oOO-aD-Wvd" id="D2t-5a-Upg"/>
+                        <outlet property="dayTwoForecastWeatherImageView" destination="t1T-cB-eYL" id="a09-Ar-RgN"/>
+                        <outlet property="separatorView" destination="rcW-F7-Unf" id="fbI-5S-0cJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
