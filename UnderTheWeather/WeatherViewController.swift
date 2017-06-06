@@ -19,6 +19,10 @@ class WeatherViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
   
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return UIStatusBarStyle.lightContent
+  }
+  
   func setBlurBackground() {
     let backgroundImageView = UIImageView(frame: UIScreen.main.bounds)
     backgroundImageView.image = UIImage.init(named: "joburg.jpeg")
