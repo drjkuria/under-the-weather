@@ -93,6 +93,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         self.updateCurrentWeather(weatherCondition: weatherCondition)
         return
       }
+      weatherService.fetchDailyForecastWeather { weatherConditions in
+        self.updateForeCastWeather(weatherConditions: weatherConditions)
+        return
+      }
     } else {
       locationManager.requestWhenInUseAuthorization()
       locationAuthStatus()
@@ -107,6 +111,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     let countryName = self.countryName(countryCode: weatherCondition.countryCode!)
     self.currentLocationLabel.text = "\(weatherCondition.locationName!), \(countryName!)"
     self.currentWeatherImageView.image = UIImage.init(named: weatherCondition.icon!)
+  }
+  
+  func updateForeCastWeather(weatherConditions: Array<WeatherCondition>) {
+    print(weatherConditions)
   }
   
   func countryName(countryCode: String) -> String? {
