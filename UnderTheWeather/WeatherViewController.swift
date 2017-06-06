@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class WeatherViewController: UIViewController {
+class WeatherViewController: UIViewController, CLLocationManagerDelegate {
   
   // MARK: - Outlets
   @IBOutlet weak var currentDateLabel: UILabel!
@@ -37,6 +38,11 @@ class WeatherViewController: UIViewController {
   @IBOutlet weak var dayFiveForecastHighLowLabel: UILabel!
   
   @IBOutlet weak var separatorView: UIView!
+  
+  var weatherService: WeatherService!
+  let locationManager = CLLocationManager()
+  var currentLocation: CLLocation!
+  var weatherCondition: WeatherCondition!
 
   override func viewDidLoad() {
     super.viewDidLoad()
