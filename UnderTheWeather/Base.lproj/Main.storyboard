@@ -65,17 +65,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcW-F7-Unf">
+                                <rect key="frame" x="16" y="308" width="288" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7BD-8e-K5a"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.36645859390000002" green="0.74611796289999999" blue="0.57236119910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rcW-F7-Unf" firstAttribute="top" secondItem="z1u-Io-PBk" secondAttribute="bottom" constant="35" id="35F-MX-W46"/>
                             <constraint firstItem="g4t-Aq-UGP" firstAttribute="top" secondItem="v0W-Os-gXI" secondAttribute="bottom" constant="8" id="3Sz-TW-TfV"/>
                             <constraint firstItem="5Sp-Ew-FLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8b5-dc-d6d"/>
                             <constraint firstItem="v0W-Os-gXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Auh-M8-Cus"/>
                             <constraint firstAttribute="leadingMargin" secondItem="5Sp-Ew-FLi" secondAttribute="leading" id="BiG-lN-zCu"/>
+                            <constraint firstItem="rcW-F7-Unf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQR-g9-G6p"/>
                             <constraint firstAttribute="leadingMargin" secondItem="z1u-Io-PBk" secondAttribute="leading" id="KeG-t6-NsP"/>
                             <constraint firstAttribute="leadingMargin" secondItem="g4t-Aq-UGP" secondAttribute="leading" id="QWB-Tb-Y2S"/>
                             <constraint firstItem="4yU-fZ-pSR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sd1-f3-Hg8"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4yU-fZ-pSR" secondAttribute="leading" id="Uhp-Ll-sDm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rcW-F7-Unf" secondAttribute="leading" id="Xyp-XB-Mn8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rcW-F7-Unf" secondAttribute="trailing" id="Yeq-wg-9ol"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g4t-Aq-UGP" secondAttribute="trailing" id="ahi-8x-BBq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4yU-fZ-pSR" secondAttribute="trailing" id="eoJ-5E-9uL"/>
                             <constraint firstItem="z1u-Io-PBk" firstAttribute="top" secondItem="4yU-fZ-pSR" secondAttribute="bottom" constant="8" id="hIO-Er-Oke"/>
