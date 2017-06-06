@@ -31,7 +31,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04n.png" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-Os-gXI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04n.png" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-Os-gXI">
                                 <rect key="frame" x="120" y="69" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Wo0-DE-cUC"/>
