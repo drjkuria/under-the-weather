@@ -114,7 +114,15 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
   }
   
   func updateForeCastWeather(weatherConditions: Array<WeatherCondition>) {
-    print(weatherConditions)
+    var forecastDayNamesArray = [dayOneForecastNameLabel, dayTwoForecastNameLabel, dayThreeForecastNameLabel, dayFourForecastNameLabel, dayFiveForecastNameLabel]
+    var forecastDayImageViewArray = [dayOneForecastWeatherImageView, dayTwoForecastWeatherImageView, dayThreeForecastWeatherImageView, dayFourForecastWeatherImageView, dayFiveForecastWeatherImageView]
+    var forecastDayHighLowLabelArray = [dayOneForecastHighLowLabel, dayTwoForecastHighLowLabel, dayThreeForecastHighLowLabel, dayFourForecastHighLowLabel, dayFiveForecastHighLowLabel]
+    
+    for (index, weatherCondition) in weatherConditions.enumerated() {
+      forecastDayNamesArray[index]?.text = "\(weatherCondition.date!)"
+      forecastDayHighLowLabelArray[index]?.text = "\(weatherCondition.maxTemperature!) / \(weatherCondition.minTemperature!)"
+      forecastDayImageViewArray[index]?.image = UIImage.init(named: weatherCondition.icon!)
+    }
   }
   
   func countryName(countryCode: String) -> String? {
