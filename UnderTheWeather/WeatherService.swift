@@ -27,4 +27,41 @@ class WeatherService {
   var currentWeatherURL: String { return baseURL + lat + lon + units + appID }
   var dailyForecastURL: String { return forecastBaseURL + lat + lon + numOfDays + modeJSON + units + appID }
   
+  // fetch current weather
+  func fetchCurrentWeather(completed: @escaping (_ weatherCondition: WeatherCondition) -> Void) {
+    Alamofire.request(currentWeatherURL).responseJSON { response in
+      if let responseDictionary = response.result.value {
+        let responseJSON = JSON(responseDictionary)
+        print("****** Response *******: \(responseJSON)")
+        completed(_: self.currentWeatherFromJSON(json: responseJSON))
+      } else {
+        print("Error!")
+      }
+    }
+  }
+}
+
+private extension WeatherService {
+  func currentWeatherFromJSON(json: JSON) -> WeatherCondition{
+    let name = json["name"].string
+    let description = json["weather"][0]["description"].stringValue
+    let minTemp = json["main"]["temp_min"].doubleValue.roundToInt()
+    let maxTemp = json["main"]["temp_max"].doubleValue.roundToInt()
+    let temp = json["main"]["temp"].doubleValue.roundToInt()
+    let icon = json["weather"][0]["icon"].stringValue
+    let date = json["dt"].doubleValue.dateStringFromTime()
+    let code = json["sys"]["country"].stringValue
+    
+    
+    return WeatherCondition(
+      locationName: name,
+      description: description,
+      minTemperature: minTemp,
+      maxTemperature: maxTemp,
+      temperature: temp,
+      icon: icon,
+      date: date,
+      countryCode: code
+    )
+  }
 }
