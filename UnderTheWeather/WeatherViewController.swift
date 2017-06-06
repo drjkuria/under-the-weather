@@ -41,6 +41,7 @@ class WeatherViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setBlurBackground()
+    separatorView.alpha = 0.65
   }
 
   override func didReceiveMemoryWarning() {
