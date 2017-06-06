@@ -55,7 +55,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     locationManager.startUpdatingLocation()
 
     weatherService = WeatherService()
-    locationAuthStatus()
   }
   
   override func viewDidAppear(_ animated: Bool) {
