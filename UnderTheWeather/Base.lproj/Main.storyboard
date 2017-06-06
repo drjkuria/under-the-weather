@@ -31,7 +31,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-Os-gXI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04n.png" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-Os-gXI">
                                 <rect key="frame" x="120" y="69" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Wo0-DE-cUC"/>
@@ -130,35 +130,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RB2-sY-LXS">
                                 <rect key="frame" x="28" y="382" width="265" height="45"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlO-N8-ZNz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d.png" translatesAutoresizingMaskIntoConstraints="NO" id="hlO-N8-ZNz">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="IjJ-YT-DTt"/>
                                             <constraint firstAttribute="width" constant="45" id="d5P-Tu-e8o"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-cB-eYL">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02d.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-cB-eYL">
                                         <rect key="frame" x="55" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="brN-KN-lo4"/>
                                             <constraint firstAttribute="height" constant="45" id="luP-na-JVg"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-Bd-N1s">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03d.png" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-Bd-N1s">
                                         <rect key="frame" x="110" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="3ip-zv-8tj"/>
                                             <constraint firstAttribute="height" constant="45" id="cG1-10-OfX"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-XI-zB2">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10d.png" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-XI-zB2">
                                         <rect key="frame" x="165" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="7ZR-qd-LyR"/>
                                             <constraint firstAttribute="width" constant="45" id="Xls-1s-OMd"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xru-bF-Tlf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11d.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xru-bF-Tlf">
                                         <rect key="frame" x="220" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="kTb-eM-ocz"/>
@@ -273,4 +273,12 @@
             <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01d.png" width="50" height="50"/>
+        <image name="02d.png" width="50" height="50"/>
+        <image name="03d.png" width="50" height="50"/>
+        <image name="04n.png" width="50" height="50"/>
+        <image name="10d.png" width="50" height="50"/>
+        <image name="11d.png" width="50" height="50"/>
+    </resources>
 </document>
