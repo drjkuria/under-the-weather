@@ -32,7 +32,4 @@ This is a weather app for iOS using Swift 3\. The app uses OpenWeatherMap API: `
 
 ## Screenshots
 
-Screenshots for the app in development (storyboard) and app in use were taken on a mac and iPhone respectively.
-
-- ![Settings Window](https://raw.github.com/jonahkuria/under-the-weather/master/UnderTheWeather/screenshots/storyboard.png)
-- ![Settings Window](https://raw.github.com/jonahkuria/under-the-weather/master/UnderTheWeather/screenshots/simulator.png) ![Settings Window](https://raw.github.com/jonahkuria/under-the-weather/master/UnderTheWeather/screenshots/device.png)
+Screenshots for the app in development (storyboard) and app in use were taken on a mac and iPhone respectively. ![Settings Window](https://raw.github.com/jonahkuria/under-the-weather/master/UnderTheWeather/screenshots/storyboard.png)![Settings Window](https://raw.github.com/jonahkuria/under-the-weather/master/UnderTheWeather/screenshots/simulator.png) ![Settings Window](https://raw.github.com/jonahkuria/under-the-weather/master/UnderTheWeather/screenshots/device.png)
